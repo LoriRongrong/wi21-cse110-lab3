@@ -4,7 +4,7 @@
     
  <head>
      <meta charset="utf-8">
-    <title>Online or offline</title>
+    <title>Lori'Lab2</title>
     <link rel="stylesheet" href="style.css">
  </head>
  <body>
@@ -13,6 +13,7 @@
         Cat's world 
     </h1>
     <header>
+        <p>This is header</p>
         <h2>Some common cat categories</h2>
         <nav>
             <ul>
@@ -24,7 +25,8 @@
 
     <main>
         <section>
-            <h2>A poem about cat</h2>
+            <div>
+                <h2>A poem about cat</h2>
             <p>As the cat <br>
                 climbed over <br>
                 the top of <br>
@@ -42,17 +44,21 @@
                 flowerpot. <br>
             </p>
             <p> <cite>February</cite> by Margaret Atwood</p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    <pre>
+                        <code>
+                            for _ in [domestic, british]:
+                                print('meow')
+                        </code>
+                    </pre>
+                </p>
+                
+            </div>
             
-            <p>
-                <pre>
-                    <code>
-                        for _ in [domestic, british]:
-                            print('meow')
-                    </code>
-                </pre>
-            </p>
-            
-         
+            <hr>
          <p>
              Fun fact:  
              <span >Threre is <b>seventy-one</b> different kinds of cat according to <i>the International Cat Association</i></span>
@@ -74,7 +80,7 @@
            </aside>
         </section>
         <section>
-            <h2>Some more fun media on cats</h2>
+            <h2>Some more <strong>fun</strong> media on cats</h2>
             <video controls autoplay  width="200">
                 <source src="Dynamic.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
@@ -91,41 +97,47 @@
                 <img  width="100" height="100" src="what.svg">
             </svg>
             <form method="get">
-                <p>
-                <p><label>Course:
+                
+                <p><label>Kitty:
                     <select>
-                        <optgroup label="8.01 Physics I: Classical Mechanics">
-                        <option value="8.01.1">Lecture 01: Powers of Ten
-                        <option value="8.01.2">Lecture 02: 1D Kinematics
-                        <option value="8.01.3">Lecture 03: Vectors
-                        <optgroup label="8.02 Electricity and Magnestism">
-                        <option value="8.02.1">Lecture 01: What holds our world together?
-                        <option value="8.02.2">Lecture 02: Electric Field
-                        <option value="8.02.3">Lecture 03: Electric Flux
-                    
+                        <optgroup label="Big Cat">
+                        <option value="1.1">Chausie
+                        <option value="1.2">Norwegian Forest Cat
+                        <option value="1.3">Siberian Cat
+                        <optgroup label="Small Cat">
+                        <option value="2.1">Singapura
+                        <option value="2.2">Munchkin
+                        <option value="2.3">Cornish Rex
                     </select>
                 </label>
                 <h3>The cat form</h3>
-                <label>Let us know what type of cats you like!</label>
+                <label>Let me know your love of cat!</label>
                 <br><br>
                 <textarea >
                     Domestc or British
                 </textarea>
                 <br><br>
-                <input type=submit value="Submit">
+                <input type=submit value="Send">
             </form>
-                <br><br>
+            <br><br>
         </section>
         <section>
             <fieldset>
-                <legend>Display</legend>
-                <p><label><input type=radio name=c value=0 checked> Black on White</label></p>
-                <p><label><input type=checkbox name=g> Use grayscale</label></p>
-                <p><label>Enhance contrast <input type=range name=e list=contrast min=0 max=100 value=0 step=1></label></p>
-                <p><label>Comment: <input type=text name="comment" dirname="comment.dir" required></label></p>
-                <p><label>Search terms: <input type=search name=q></label></p>
+                <legend>More info on ur preview for cats</legend>
+                <p>Your fav cat breed?</p>
+                <p><label><input type=checkbox name=c value=0 checked> Siamese</label></p>
+                <p><label><input type=checkbox name=c value=0 checked> Persian</label></p>
+                <p><label><input type=checkbox name=c value=0 checked> Maine Coon</label></p>
+                <p><label><input type=checkbox name=c value=0 checked> Ragdoll</label></p>
+                <p><label><input type=checkbox name=c value=0 checked> Bengal</label></p>
+                <p>Have you had a cat before?</p>
+                <p><label><input type=radio name=g> yes</label></p>
+                <p><label><input type=radio name=g> no</label></p>
+                <p><label>Rate how much you like cats <input type=range name=e list=contrast min=0 max=10 value=0 step=1></label></p>
+                <p><label>Search the place where you plan to adopt a cat: <input type=search name=q></label></p>
                 <input type=hidden autocomplete=transaction-currency value="CHF">
-                <p><label>Expiry Date: <input type=month autocomplete=cc-exp></label></p>
+                <p><label>A future date when you plan to have a cat: <input type=month autocomplete=cc-exp></label></p>
+                <p><label>Comments for the host: <input type=text name="comment" dirname="comment.dir" required></label></p>
                 <p><label>Email: <input type=email></label></p>
                 <p><label>Phone: <input type=telephone ></label></p>
                 <p><label>Today's date: <input type=date></label></p>
@@ -135,36 +147,46 @@
                 </datalist>
                </fieldset>
         </section>
+        <br><br>
         <section>
-            <table>
-                <caption>This is table</caption>
+            <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+            <table style="width:70%">
+                <caption>the table needs a caption</caption>
                 <colgroup>
-                    <col span="2" style="background-color:red">
+                    <col span="2" >
                     <col style="background-color:yellow">
                   </colgroup>
-                <thead>
-                 <tr>
-                  <th>Name <th>Color <th>Sex <th>Legs
-                <tbody>
-                 <template id="row">
-                  <tr>
-                    <th><label for=e1>Name</label>
-                    <th><label for=e2>Product</label>
-                    <th><label for=e3>Picture</label>
-                    <th><label for=e4>Price</label> 
-                  </tr>
-                  <tr>
-                    <td> first entry
-                    <td> second entry
-                    <td> third entry
-                    <td> fourth entry
-                 </template>
-               </table>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <button type="button">Click Me!</button>
+                <template>
+                    <h2>Surprise?!</h2>
+                </template>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+            
                <details>
                 <summary>Epcot Center</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                <p>Epcot is a theme park at <strong>Walt Disney</strong> World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
               </details>
-              <button type="button">Click Me!</button>
+            
         </section>
     </main>
        
