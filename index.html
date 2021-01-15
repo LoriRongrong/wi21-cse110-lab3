@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <style ></style>
+    
+ <head>
+     <meta charset="utf-8">
+    <title>Online or offline</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     
+    <h1>
+        Cat's world 
+    </h1>
+    <header>
+        <h2>Some common cat categories</h2>
+        <nav>
+            <ul>
+                <li><a href="./domestic"> Domestic Short</a></li>
+                <li><a href="./british"> British Shorthair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>A poem about cat</h2>
+            <p>As the cat <br>
+                climbed over <br>
+                the top of <br>
+                
+                the jamcloset— <br>
+                first the right <br>
+                forefoot <br>
+                
+                carefully <br>
+                then the hind <br>
+                stepped down <br>
+                
+                into the round <br>
+                of the empty <br>
+                flowerpot. <br>
+            </p>
+            <p> <cite>February</cite> by Margaret Atwood</p>
+            
+            <p>
+                <pre>
+                    <code>
+                        for _ in [domestic, british]:
+                            print('meow')
+                    </code>
+                </pre>
+            </p>
+            
+         
+         <p>
+             Fun fact:  
+             <span >Threre is <b>seventy-one</b> different kinds of cat according to <i>the International Cat Association</i></span>
+        </p>
+        <ol>
+            <li>Persian Cat</li>
+            <li>Maine Coon</li>
+            <li>Siamese Cat</li>
+            <li>Ragdoll</li>
+            <li>...</li>
+        </ol>
+           
+           <aside>
+            <p>I used to have a cat called <em>Niko</em> before high school, Niko left because he wanted to have a girlfriend :(</p>
+            <figure>
+                <img src="Niko.jpg" width="200">
+            </figure>
+            <figcaption><em>Niko</em> is British short!</figcaption>
+           </aside>
+        </section>
+        <section>
+            <h2>Some more fun media on cats</h2>
+            <video controls autoplay  width="200">
+                <source src="Dynamic.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7yLxxyzGiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+            <picture>
+                <source media="(min-width:650px)" srcset="https://images.app.goo.gl/eWEzyNDXKL4zV7fA6">
+            </picture>
+            <svg width="100" height="100">
+                <img  width="100" height="100" src="what.svg">
+            </svg>
+            <form method="get">
+                <p>
+                <p><label>Course:
+                    <select>
+                        <optgroup label="8.01 Physics I: Classical Mechanics">
+                        <option value="8.01.1">Lecture 01: Powers of Ten
+                        <option value="8.01.2">Lecture 02: 1D Kinematics
+                        <option value="8.01.3">Lecture 03: Vectors
+                        <optgroup label="8.02 Electricity and Magnestism">
+                        <option value="8.02.1">Lecture 01: What holds our world together?
+                        <option value="8.02.2">Lecture 02: Electric Field
+                        <option value="8.02.3">Lecture 03: Electric Flux
+                    
+                    </select>
+                </label>
+                <h3>The cat form</h3>
+                <label>Let us know what type of cats you like!</label>
+                <br><br>
+                <textarea >
+                    Domestc or British
+                </textarea>
+                <br><br>
+                <input type=submit value="Submit">
+            </form>
+                <br><br>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Display</legend>
+                <p><label><input type=radio name=c value=0 checked> Black on White</label></p>
+                <p><label><input type=checkbox name=g> Use grayscale</label></p>
+                <p><label>Enhance contrast <input type=range name=e list=contrast min=0 max=100 value=0 step=1></label></p>
+                <p><label>Comment: <input type=text name="comment" dirname="comment.dir" required></label></p>
+                <p><label>Search terms: <input type=search name=q></label></p>
+                <input type=hidden autocomplete=transaction-currency value="CHF">
+                <p><label>Expiry Date: <input type=month autocomplete=cc-exp></label></p>
+                <p><label>Email: <input type=email></label></p>
+                <p><label>Phone: <input type=telephone ></label></p>
+                <p><label>Today's date: <input type=date></label></p>
+                <datalist id=contrast>
+                 <option label=Normal value=0>
+                 <option label=Maximum value=100>
+                </datalist>
+               </fieldset>
+        </section>
+        <section>
+            <table>
+                <caption>This is table</caption>
+                <colgroup>
+                    <col span="2" style="background-color:red">
+                    <col style="background-color:yellow">
+                  </colgroup>
+                <thead>
+                 <tr>
+                  <th>Name <th>Color <th>Sex <th>Legs
+                <tbody>
+                 <template id="row">
+                  <tr>
+                    <th><label for=e1>Name</label>
+                    <th><label for=e2>Product</label>
+                    <th><label for=e3>Picture</label>
+                    <th><label for=e4>Price</label> 
+                  </tr>
+                  <tr>
+                    <td> first entry
+                    <td> second entry
+                    <td> third entry
+                    <td> fourth entry
+                 </template>
+               </table>
+               <details>
+                <summary>Epcot Center</summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+              </details>
+              <button type="button">Click Me!</button>
+        </section>
+    </main>
+       
+      
+  <footer>
+        This is the footer
+  </footer>
+ </body>
+</html>
