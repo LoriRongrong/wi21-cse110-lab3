@@ -1,0 +1,19 @@
+Github page: https://github.com/LoriRongrong/CSE110-Lab2/
+Published page: https://lorirongrong.github.io/CSE110-Lab2/
+
+Passphrases:
+q1: greenEggsAndHam
+q2: iHateCplusplus
+q3: HTMLRocks
+q4: JavaScriptRule
+q5: SvelteBeatsReact
+q6: ThisIsJS
+q7: YouFoundMe
+q8: coolcoolcool
+q9: 2020sucked
+q10: listenToTheBlackKeys
+q11: a11yComesFirst
+q12: iLoveWebDev
+q13: text/html; charset=iso-8859-1
+
+reference for question13: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Configuring_server_MIME_types
