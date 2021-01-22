@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- external CSS -->
-    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- internal CSS -->
     <style>
       body {
@@ -23,18 +23,19 @@
       <p style="text-align: center; font-size: x-small; padding: 0%">
         This is header
       </p>
+    </header>
+    <div>
       <h2>Some common cat categories</h2>
-      <nav>
+      <nav class="navigation">
         <ul>
           <li><a href="./domestic"> Domestic Short</a></li>
           <li><a href="./british"> British Shorthair</a></li>
         </ul>
       </nav>
-    </header>
-
+    </div>
     <main>
       <section>
-        <div>
+        <div class="citation" id="poem">
           <h2>A poem about cat</h2>
           <p>
             As the cat <br />
@@ -56,7 +57,7 @@
           <p><cite>February</cite> by Margaret Atwood</p>
         </div>
         <hr />
-        <div>
+        <div class="citation" id="code">
           <pre>
                         <code>
                             for _ in [domestic, british]:
@@ -66,20 +67,22 @@
         </div>
 
         <hr />
-        <p>
-          Fun fact:
-          <span
-            >Threre is <b>seventy-one</b> different kinds of cat according to
-            <i>the International Cat Association</i></span
-          >
-        </p>
-        <ol>
-          <li>Persian Cat</li>
-          <li>Maine Coon</li>
-          <li>Siamese Cat</li>
-          <li>Ragdoll</li>
-          <li>...</li>
-        </ol>
+        <div>
+          <p>
+            Fun fact:
+            <span
+              >Threre is <b>seventy-one</b> different kinds of cat according to
+              <i>the International Cat Association</i></span
+            >
+          </p>
+          <ol>
+            <li>Persian Cat</li>
+            <li>Maine Coon</li>
+            <li>Siamese Cat</li>
+            <li>Ragdoll</li>
+            <li>...</li>
+          </ol>
+        </div>
 
         <aside>
           <p>random aside words</p>
@@ -88,41 +91,54 @@
           I used to have a cat called <em>Niko</em> before high school, Niko
           left because he wanted to have a girlfriend :(
         </p>
-        <figure>
-          <img src="Niko.jpg" width="200" alt="Niko" />
-          <figcaption><em>Niko</em> is British short!</figcaption>
-        </figure>
+        <div class="media">
+          <figure>
+            <img src="Niko.jpg" width="200" alt="Niko" />
+            <figcaption><em>Niko</em> is British short!</figcaption>
+          </figure>
+        </div>
       </section>
       <section>
         <h2>Some more <strong>fun</strong> media on cats</h2>
-        <video controls autoplay width="200">
-          <source
-            src="Dynamic.mp4"
-            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-          />
-        </video>
+        <div class="media">
+          <video controls autoplay width="200">
+            <source
+              src="Dynamic.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+          </video>
+        </div>
+
         <br />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/7yLxxyzGiko"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="media">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7yLxxyzGiko"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
         <br />
-        <audio controls>
-          <source
-            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
-        <picture>
-          <img src="Niko.jpg" width="200" alt="Niko" />
-        </picture>
-        <svg width="100" height="100">
-          <circle cx="50" cy="50" r="40" />
-        </svg>
-        <form method="get">
+        <div class="media">
+          <audio controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+        <div class="media">
+          <picture>
+            <img src="Niko.jpg" width="200" alt="Niko" />
+          </picture>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" />
+          </svg>
+        </div>
+
+        <form id="catForm" method="get">
           <p>
             <label
               >Kitty:
@@ -154,7 +170,7 @@
         <br /><br />
       </section>
       <section>
-        <fieldset>
+        <fieldset id="infoForm">
           <legend>More info on ur preview for cats</legend>
           <p>Your fav cat breed?</p>
           <p>
