@@ -6,7 +6,6 @@
     <!-- internal CSS -->
     <style>
       body {
-        background-color: #f2f3f4;
         text-align: justify;
       }
     </style>
@@ -131,49 +130,54 @@
             />
           </audio>
         </div>
-        <div class="media">
-          <picture>
+        <div class="media container">
+          <picture class="item">
             <!-- inline CSS -->
             <img src="Niko.jpg" width="200" alt="Niko" />
           </picture>
-          <svg width="100" height="100">
+          <svg class="item" width="100" height="100">
             <circle cx="50" cy="50" r="40" />
           </svg>
         </div>
+        <div class="catForm">
+          <form method="get">
+            <p>
+              <label
+                >Kitty:
+                <select>
+                  <optgroup label="Big Cat">
+                    <option value="1.1">Chausie</option>
+                    <option value="1.2">Norwegian Forest Cat</option>
+                    <option value="1.3">Siberian Cat</option>
+                  </optgroup>
+                  <optgroup label="Small Cat">
+                    <option value="2.1">Singapura</option>
+                    <option value="2.2">Munchkin</option>
+                    <option value="2.3">Cornish Rex</option>
+                  </optgroup>
+                </select>
+              </label>
+            </p>
 
-        <form id="catForm" method="get">
-          <p>
-            <label
-              >Kitty:
-              <select>
-                <optgroup label="Big Cat">
-                  <option value="1.1">Chausie</option>
-                  <option value="1.2">Norwegian Forest Cat</option>
-                  <option value="1.3">Siberian Cat</option>
-                </optgroup>
-                <optgroup label="Small Cat">
-                  <option value="2.1">Singapura</option>
-                  <option value="2.2">Munchkin</option>
-                  <option value="2.3">Cornish Rex</option>
-                </optgroup>
-              </select>
-            </label>
-          </p>
+            <h3>The cat form</h3>
+            <label>Let me know your love of cat!</label>
+            <br /><br />
+            <textarea>
+                      Domestc or British
+                  </textarea
+            >
+            <br /><br />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
 
-          <h3>The cat form</h3>
-          <label>Let me know your love of cat!</label>
-          <br /><br />
-          <textarea>
-                    Domestc or British
-                </textarea
-          >
-          <br /><br />
-          <input type="submit" value="Send" />
-        </form>
         <br /><br />
       </section>
-      <section>
-        <div>
+      <section class="grid">
+        <div class="grid_child_one">
+          <p>Now we try to create a form for the Cat forms</p>
+        </div>
+        <div class="grid_child_two">
           <fieldset id="infoForm">
             <legend>More info on ur preview for cats</legend>
             <p>Your fav cat breed?</p>
@@ -265,55 +269,58 @@
             </datalist>
           </fieldset>
         </div>
-      </section>
-      <br /><br />
-      <section>
-        <canvas id="myCanvas"
-          >Your browser does not support the canvas tag.</canvas
-        >
-        <table style="width: 70%">
-          <caption>
-            the table needs a caption
-          </caption>
-          <colgroup>
-            <col span="2" />
-            <col style="background-color: yellow" />
-          </colgroup>
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-          </tr>
+        <div class="grid_child_three">
+          <canvas class="row" id="myCanvas"
+            >Your browser does not support the canvas tag.</canvas
+          >
+        </div>
+        <div class="grid_child_four">
+          <table style="width: 70%">
+            <caption>
+              the table needs a caption
+            </caption>
+            <colgroup>
+              <col span="2" />
+              <col style="background-color: yellow" />
+            </colgroup>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
 
-          <template>
-            <h2>Surprise?!</h2>
-          </template>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>80</td>
-          </tr>
-        </table>
+            <template>
+              <h2>Surprise?!</h2>
+            </template>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+          </table>
+        </div>
 
-        <details>
-          <summary>Epcot Center</summary>
-          <p>
-            Epcot is a theme park at <strong>Walt Disney</strong> World Resort
-            featuring exciting attractions, international pavilions,
-            award-winning fireworks and seasonal special events.
-          </p>
-        </details>
-        <button type="button">Click Me!</button>
+        <div class="grid_child_five">
+          <details>
+            <summary>Epcot Center</summary>
+            <p>
+              Epcot is a theme park at <strong>Walt Disney</strong> World Resort
+              featuring exciting attractions, international pavilions,
+              award-winning fireworks and seasonal special events.
+            </p>
+          </details>
+          <button type="button">Click Me!</button>
+        </div>
       </section>
     </main>
 
