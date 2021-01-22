@@ -1,8 +1,6 @@
-h1 h2 h3 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+/* element styling */
 
+/* class styling */
 .citation {
   text-align: center;
   float: center;
@@ -10,7 +8,83 @@ h1 h2 h3 p {
   background-color: #7ec0ee;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
 }
-/* .navigation {
+.media {
+  border-color: sienna;
+}
 
-} */
+/* id styling */
+#navigation {
+  /* color: rgb(red, green, blue); */
+  border-style: dashed;
+  margin: 1%;
+}
+#poem {
+  border-width: 1in;
+}
+#code {
+  border-radius: 0%;
+}
+#catForm {
+  margin-top: 2%;
+}
+#infoForm {
+  margin-bottom: 2%;
+}
+#contrast {
+  margin-left: 2%;
+}
+#myCanvas {
+  margin-right: 2%;
+}
+/* pseudo-class */
+a:link {
+  color: rosybrown;
+}
+a:visited {
+  color: slateblue;
+}
+div:hover {
+  background-color: #e3afbc;
+}
+/* universal selector styling */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* grouping/ combinators styling */
+
+/* selector list */
+h1,
+h2,
+h3,
+p {
+  padding: 1%;
+}
+/* Descendant Combinator */
+div h1 {
+  text-decoration: tomato;
+}
+/* Child Combinator */
+div > p {
+  background-color: #c5cbe3;
+}
+/* Adjacent sibling combinator */
+div + p {
+  background-color: #edc7b7;
+}
+/* General sibling combinator  */
+div ~ p {
+  background-color: #5680e9;
+}
+/* Combining Two Selectors */
+div.citation {
+  border-style: groove;
+}
+/* attribute selector */
+a[href="./domestic"] {
+  color: rgba(red, green, blue, alpha);
+}
