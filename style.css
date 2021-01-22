@@ -1,6 +1,7 @@
 h1 h2 h3 p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 1%;
 }
 
 .citation {
@@ -10,7 +11,33 @@ h1 h2 h3 p {
   background-color: #7ec0ee;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
 }
-/* .navigation {
-
-} */
+#navigation {
+  /* color: rgb(red, green, blue); */
+  border-style: dashed;
+  margin: 1%;
+}
+.media {
+  border-color: sienna;
+}
+#poem {
+  border-width: 1in;
+}
+#code {
+  border-radius: 0%;
+}
+#catForm {
+  margin-top: 2%;
+}
+#infoForm {
+  margin-bottom: 2%;
+}
+#contrast {
+  margin-left: 2%;
+}
+#myCanvas {
+  margin-right: 2%;
+}
