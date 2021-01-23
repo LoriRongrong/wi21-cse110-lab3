@@ -1,7 +1,7 @@
 /* element styling */
 label {
   text-decoration: underline;
-  max-width: 150px;
+  max-width: 10%;
   min-width: 100vmax;
 }
 p {
@@ -94,7 +94,7 @@ fieldset {
 #navigation {
   border-style: dashed;
   border-radius: 10%;
-  margin: 1%;
+  margin: 10px 10px;
   width: 80%;
 }
 #poem {
@@ -110,6 +110,7 @@ fieldset {
 
 #infoForm {
   margin-bottom: 2%;
+  margin-top: 2%;
 }
 #contrast {
   margin-left: 2vh;
